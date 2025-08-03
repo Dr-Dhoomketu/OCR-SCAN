@@ -384,7 +384,7 @@ if uploaded_file:
         with st.spinner("📊 Analyzing document and extracting information..."):
             try:
                 # TODO: Replace with your actual webhook URL
-                n8n_url = "https://n8n-railway-production-9cf8.up.railway.app/webhook/http://localhost:5678/webhook/upload"
+                n8n_url = "https://n8n-railway-production-9cf8.up.railway.app/webhook-test/e8fada1c-1a55-4bd1-af8f-b97c848cc477"
                 
                 files = {"image": (uploaded_file.name, uploaded_file.getvalue(), uploaded_file.type)}
                 response = requests.post(n8n_url, files=files)
